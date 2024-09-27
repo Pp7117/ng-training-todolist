@@ -54,18 +54,7 @@ button:hover {
   border-radius: 10px;
 }
 
-/* .task-table {
-  display: grid;
-  
-  gap: 10px; 
-  } */
-  
-  /* .task-table th {
-  background-color: hsl(199, 53%, 32%);
-  color: white;
-  font-weight: bold;
-  border-radius: 10px;
-  } */
+
   
 .task-table th,
 .task-table td {
