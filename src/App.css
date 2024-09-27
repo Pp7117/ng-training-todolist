@@ -1,0 +1,268 @@
+/* Overall body*/
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #dadae0;
+  color: #333;
+}
+
+/* Dashboard css */
+.dashboard {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+}
+
+button {
+  background-color: #3a3047;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b48a8a;
+}
+
+/* Task Table Styles */
+.task-table {
+  width: 100%;
+  
+  margin-top: 20px;
+  grid-template-columns: repeat(10, 20px);
+  gap: 20px; 
+}
+.task-table th {
+  background-color: hsl(199, 53%, 32%);
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/* .task-table {
+  display: grid;
+  
+  gap: 10px; 
+  } */
+  
+  /* .task-table th {
+  background-color: hsl(199, 53%, 32%);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  } */
+  
+.task-table th,
+.task-table td {
+  padding: 12px 15px;
+  text-align: center;
+  
+  border-bottom: 1px solid #ddd;
+}
+
+
+
+.task-table td {
+  vertical-align: middle;
+}
+
+.task-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status Badges */
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.badge.completed {
+  background-color: #4caf50;
+}
+
+.badge.in-progress {
+  background-color: #ff9800;
+}
+
+.badge.not-started {
+  background-color: #f44336;
+}
+
+/* Priority Badges */
+.priority-low {
+  background-color: #2196f3;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.priority-normal {
+  background-color: #ffeb3b;
+  color: #333;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+.priority-high {
+  background-color: #f44336;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 400px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Form Buttons */
+.form-buttons,
+.delete-popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-buttons button,
+.delete-popup-buttons button {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.delete-popup-buttons button {
+  background-color: #f44336;
+}
+
+.delete-popup-buttons button:hover {
+  background-color: #c62828;
+}
+
+.form-buttons button:hover {
+  background-color: #6200ea;
+}
+
+
+
+
+/* Form Container */
+.inline_form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+.inline_form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs, Textarea, Select */
+.inline_form input, 
+.inline_form textarea, 
+.inline_form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Inputs Focus */
+.inline_form input:focus, 
+.inline_form textarea:focus, 
+.inline_form select:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Buttons */
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Button Styles */
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Cancel Button */
+.form-buttons button[type="button"] {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+/* Submit Button */
+.form-buttons button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* Hover Effects */
+.form-buttons button:hover[type="button"] {
+  background-color: #e0e0e0;
+}
+
+.form-buttons button:hover[type="submit"] {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
